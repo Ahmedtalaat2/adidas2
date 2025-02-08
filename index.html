@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adidas Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+        }
+        .banner {
+            background-color: #005eff;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #005eff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+        .text-content {
+            max-width: 400px;
+            text-align: left;
+            margin-right: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #005eff;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #0040c0;
+        }
+        .image-content img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 0;
+            flex-wrap: wrap;
+        }
+        .feature img {
+            width: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .feature img:hover {
+            transform: scale(1.1);
+        }
+        .reviews {
+            padding: 30px;
+            background: #f4f4f4;
+        }
+        .review-box {
+            background: white;
+            padding: 15px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-content {
+                margin-right: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="banner">20% Off - Limited Time!</div>
+    <nav>
+        <h2>Adidas</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="text-content">
+            <h1>Adidas Egypt – Running Shoes</h1>
+            <p>Experience the ultimate comfort and style with Adidas running shoes. Perfect for athletes and casual wearers alike!</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+        <div class="image-content">
+            <img src="img/download.jpeg" alt="Adidas Shoes">
+        </div>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <img src="img/download.jpeg" alt="Lightweight Design">
+            <p>Lightweight Design</p>
+        </div>
+        <div class="feature">
+            <img src="img/download.jpeg" alt="Water Resistant">
+            <p>Water Resistant</p>
+        </div>
+        <div class="feature">
+            <img src="img/download.jpeg" alt="Comfort Fit">
+            <p>Comfort Fit</p>
+        </div>
+    </div>
+    <div class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-box">
+            ⭐⭐⭐⭐⭐ <strong>"Amazing comfort and great design!"</strong>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
